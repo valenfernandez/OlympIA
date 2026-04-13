@@ -1,4 +1,62 @@
-# OlympIA
+
+# OlympIA - English
+
+> Automatic text analysis tool for legal evidence — built for non-technical users in judicial contexts.
+
+## The problem
+Processing digital text evidence (chat logs, messages) in legal cases required
+forensic experts to manually review hundreds of documents. This took up to 7 days
+per case and created a bottleneck in judicial proceedings.
+
+## What OlympIA does
+OlympIA allows investigators to upload text conversations and automatically
+analyze them using a suite of custom-trained NLP models, generating a
+structured visual report with the results.
+
+**Models:**
+- Binary violence classifier — detects whether a message is violent
+- Multi-category violence classifier — categorizes violence type according
+  to Argentine law (applied after the binary classifier)
+- Named entity recognizer (NER) — extracts PERSON, ORGANIZATION, LOCATION,
+  DATE, TIME, MONEY, MEASURE, and MISC entities
+
+**Result:** Processing time reduced from 7 days to ~15 minutes per case (200x improvement).
+
+<table>
+  <tr>
+    <td rowspan="2">
+      <img src="https://github.com/user-attachments/assets/a11201ca-eef3-4294-be3b-76cf2fb40fc5" alt="results" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/a926501d-10f3-4a59-aeca-8411b41e0566" alt="report" width="300">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/0ad9b6ab-0399-4be8-accb-0c94f45baa16" alt="report2" width="300">
+    </td>
+  </tr>
+</table>
+
+
+## Dataset
+Custom datasets built from Argentine and regional social media and public sources.
+~50% violent messages. Cleaned and labeled for NLP training.
+
+## Stack
+Python · SpaCy · Django · Pandas · Altair · Celery · Redis · PostgreSQL
+
+## Authors
+- Valentina Fernández — valen.fernandez.montenegro@gmail.com
+- Pablo Agustín Buendía — buenaspablo@gmail.com
+- Director: Ing. Bruno Constanzo
+- Co-Director: Ing. Martín Castellote
+
+---
+*Final project — Software Engineering degree, Universidad Nacional de Mar del Plata*
+
+# OlympIA - Español
+
 ## Proyecto final para optar al grado de Ingeniero en Informática
 
 OlympIA es una herramienta de análisis automático de texto para usuarios inexpertos del ámbito judicial.
